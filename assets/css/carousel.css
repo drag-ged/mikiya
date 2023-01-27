@@ -1,10 +1,10 @@
 @font-face {
-  font-family: monument;
-  src: url("/assets/webfonts/MonumentExtended-Ultrabold.otf") format("opentype"),
-  url("/assets/webfonts/MonumentExtended-Ultrabold.woff") format('woff'),
-  url("/assets/webfonts/MonumentExtended-Ultrabold.woff2") format('woff2');
+  font-family: montserrat;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat")
 }
 .carousel-caption a{
+font-size: 15PX;
+letter-spacing: 10px;
 color: rgb(255, 255, 255);
 text-decoration: none;
 }
@@ -25,27 +25,107 @@ body {
   50%  { transform: translate(0, 15px); }
   100%   { transform: translate(0, -0px); }    
 }
-
+.cool {
+  font:  sans-serif;
+    font-size: 30px;
+}
+.cool span {
+  color: #3f3a39;
+  display: inline-block;
+  position: relative;
+}
+.cool span:nth-child(1)::before, .cool span:nth-child(1)::after {
+  animation-delay: 0.1s;
+}
+.cool span:nth-child(2)::before, .cool span:nth-child(2)::after {
+  animation-delay: 0.2s;
+}
+.cool span:nth-child(3)::before, .cool span:nth-child(3)::after {
+  animation-delay: 0.3s;
+}
+.cool span:nth-child(4)::before, .cool span:nth-child(4)::after {
+  animation-delay: 0.4s;
+}
+.cool span:nth-child(5)::before, .cool span:nth-child(5)::after {
+  animation-delay: 0.5s;
+}
+.cool span:nth-child(6)::before, .cool span:nth-child(6)::after {
+  animation-delay: 0.6s;
+}
+.cool span:nth-child(7)::before, .cool span:nth-child(7)::after {
+  animation-delay: 0.7s;
+}
+.cool span:nth-child(8)::before, .cool span:nth-child(8)::after {
+  animation-delay: 0.8s;
+}
+.cool span:nth-child(9)::before, .cool span:nth-child(9)::after {
+  animation-delay: 0.9s;
+}
+.cool span:nth-child(10)::before, .cool span:nth-child(10)::after {
+  animation-delay: 1s;
+}
+@media (prefers-reduced-motion) {
+  .cool span {
+    color: #303952;
+ }
+}
+.cool span::before {
+  animation: max-height 0.4s cubic-bezier(0.61, 1, 0.88, 1) 1 normal both;
+  color: #786fa6;
+}
+.cool span::after {
+  animation: max-width 0.7s cubic-bezier(0.61, 1, 0.88, 1) 1 normal both;
+  color: #303952;
+}
+.cool span::before, .cool span::after {
+  content: attr(data-text);
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  speak: none;
+}
+@media (prefers-reduced-motion) {
+  .cool span::before, .cool span::after {
+    animation: none;
+    content: "";
+ }
+}
+@keyframes max-width {
+  from {
+    max-width: 0;
+ }
+  to {
+    max-width: 100%;
+ }
+}
+@keyframes max-height {
+  from {
+    max-height: 0;
+ }
+  to {
+    max-height: 100%;
+ }
+}
 .carousel-inner {
     height: 100%;
 }
 /* Background images are set within the HTML using inline CSS, not here */
 .carousel-content {
-    animation: floating 5s;
+    /* animation: floating 5s;
     animation: floating 5s;
     -moz-animation: floating 5s;
     -o-animation: floating 5s;
     -ms-animation:floating 5s;
-    -webkit-animation:floating 5s;
+    -webkit-animation:floating 5s; */
     position: absolute;
-    font-family: 'monument', Arial, sans-serif;
-    font-size: 35px;
+    font:  sans-serif;
+    font-size: 30px;
     bottom: 50vh;
     margin-left: 20vw;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     z-index: 20;
     color: rgb(255, 255, 255);
-    text-shadow: -3px 0px 2px rgba(255, 0, 150, 1);
+    /* text-shadow: -3px 0px 2px rgba(255, 0, 150, 1); */
   }
 .fill {
     width: 100%;
@@ -141,3 +221,4 @@ footer {
         transform: scale(1.5,1.5);
    }
 }
+

@@ -70,12 +70,6 @@
 		transform: rotate(359deg);
 	}
 }
-@font-face {
-	font-family:monument;
-	src: url("/assets/webfonts/MonumentExtended-Ultrabold.otf") format("opentype"),
-	url("/assets/webfonts/MonumentExtended-Ultrabold.woff") format('woff'),
-	url("/assets/webfonts/MonumentExtended-Ultrabold.woff2") format('woff2');
-}
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -96,7 +90,7 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	font-family: "monument";
+	font: sans-serif;
 	font-size: 12px;
 	display: block;}
 
@@ -137,7 +131,7 @@ input::-moz-focus-inner {
 }
 
 input, select, textarea {
-	font-family: "monument";
+	font:sans-serif;
 	font-size: 10px;
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -145,7 +139,7 @@ input, select, textarea {
 	appearance: none;
 }
 .honu{
-	font-family: "monument";
+	font:sans-serif;
 	font-size: 10px;
 }
 /* Basic */
@@ -204,7 +198,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #a0a0a1;
-		font-family: "monument";
+		font:sans-serif;
 		font-size: 10px;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
@@ -1195,7 +1189,7 @@ input, select, textarea {
 /* Poptrox Popup */
 
 	.poptrox-overlay {
-		font-family: "monument";
+		font: sans-serif;
 		font-size: 12px;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
@@ -1718,8 +1712,9 @@ input, select, textarea {
 			-ms-transition-delay: 2.525s;
 			transition-delay: 2.525s;
 			height: calc(40vh - 2em);
-			min-height: 20em;
-			width: 25%;
+			min-height: 14em;
+			max-height: 17em;
+			width: 20%;
 		}
 
 			#main .thumb:nth-child(1) {
