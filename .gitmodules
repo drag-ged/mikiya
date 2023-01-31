@@ -1,3 +1,6 @@
 [submodule "mpalrocks.github.io"]
 	path = mpalrocks.github.io
 	url = https://github.com/drag-ged/mpalrocks.github.io
+[submodule "mapju"]
+	path = mapju
+	url = https://github.com/drag-ged/mapju.git
